@@ -6,7 +6,7 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task0.V19.Lib
         public double Calculate(int x)
         {
             double y = -0.25 * (Math.Pow(x,3) - 3 * Math.Pow(x,2) + 4);
-            return (y);
+            return Math.Round(y,3);
         }
     }
 }
