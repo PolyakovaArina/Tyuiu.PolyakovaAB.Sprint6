@@ -12,12 +12,12 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task2.V11.Lib
             {
                 if (i + 1 !=0)
                 {
-                    res[x] = (Math.Cos(i) / (i + 1)) - Math.Cos(i) * 1.3 + 3 * i;
+                    res[x] = Math.Round((Math.Cos(i) / (i + 1)) - Math.Cos(i) * 1.3 + 3 * i,2);
                     x++;
                 }
                 else
                 {
-                    res[x] = 0.0;
+                    res[x] = 0.00;
                     x++;
                 }
             }
