@@ -14,7 +14,7 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task6.V29.Lib
                 {
                     if (line.Contains(str))
                     {
-                        res = res + " " + line;
+                        res = res + " " + line ;
                     }
                 }
             }
