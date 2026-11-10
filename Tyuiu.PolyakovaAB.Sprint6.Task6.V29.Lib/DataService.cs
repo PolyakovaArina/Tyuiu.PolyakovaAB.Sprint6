@@ -5,7 +5,7 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task6.V29.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
-           
+
             string res = "";
             using (StreamReader sr = new StreamReader(path))
             {
@@ -19,7 +19,7 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task6.V29.Lib
                 }
             }
             return res;
-        
+
         }
     }
 }
