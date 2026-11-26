@@ -10,12 +10,15 @@ public class DataService : ISprint6Task6V29
         using (StreamReader sr = new StreamReader(path))
         {
             string line;
-            string str = "i";
             while ((line = sr.ReadLine()) != null)
             {
-                if (line.Contains(str))
+                string[] words = line.Split(" ");
+                foreach (string word in words)
                 {
-                    res = res + " " + line;
+                    if (word.Contains("i"))
+                    {
+                        res = res + word + " ";
+                    }
                 }
             }
         }
