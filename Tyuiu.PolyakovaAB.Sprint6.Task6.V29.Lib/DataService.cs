@@ -3,18 +3,19 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task6.V29.Lib;
 
 public class DataService : ISprint6Task6V29
 {
-    public string CollectTextFromFile(string str, string path)
+    public string CollectTextFromFile(string path)
     {
 
         string res = "";
         using (StreamReader sr = new StreamReader(path))
         {
             string line;
+            string str = "i";
             while ((line = sr.ReadLine()) != null)
             {
                 if (line.Contains(str))
                 {
-                    res = res + " " + line ;
+                    res = res + " " + line;
                 }
             }
         }

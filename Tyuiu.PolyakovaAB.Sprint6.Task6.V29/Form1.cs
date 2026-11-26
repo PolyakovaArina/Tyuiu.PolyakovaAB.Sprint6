@@ -19,8 +19,8 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task6.V29
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            string str = "i";
-            textBox2.Text = ds.CollectTextFromFile(str, openFilePath);
+            
+            textBox2.Text = ds.CollectTextFromFile(openFilePath);
         }
 
         private void button3_Click(object sender, EventArgs e)
