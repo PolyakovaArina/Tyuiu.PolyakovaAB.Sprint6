@@ -52,8 +52,8 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task7.V8
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridView1.Columns[i].Width = 35;
-                dataGridView2.Columns[i].Width = 35;
+                dataGridView1.Columns[i].Width = 33;
+                dataGridView2.Columns[i].Width = 33;
             }
             for (int r = 0; r < rows; r++)
             {
@@ -62,14 +62,13 @@ namespace Tyuiu.PolyakovaAB.Sprint6.Task7.V8
                     dataGridView1.Rows[r].Cells[c].Value = arV[r, c];
                 }
             }
-            arV = ds.GetMatrix(LoadFromFileData(openFilePath));
             button2.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             int[,] arV = new int[rows, columns];
-            arV = ds.GetMatrix(LoadFromFileData(openFilePath));
+            arV = ds.GetMatrix(openFilePath);
 
             for (int r = 0; r < rows; r++)
             {
