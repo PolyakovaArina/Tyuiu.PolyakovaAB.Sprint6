@@ -17,11 +17,12 @@ public class DataService : ISprint6Task6V29
                 {
                     if (word.Contains("i"))
                     {
-                        res = res + word + " ";
+                        res = res + word+" ";
                     }
                 }
             }
         }
+        res = res.Remove(res.Length - 1);
         return res;
     }
 }
